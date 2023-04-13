@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app: 
+    container_name: docker-reactnews-c
+    image: docker-reactnews-i
+    build:
+      context: .
+    ports: 
+      - 5173:80
